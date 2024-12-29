@@ -230,9 +230,9 @@ pub fn exec_job(parser: &Parser, job: &Job, block_io: IoChain) -> bool {
         }
     }
 
-    if !job.is_initially_background() {
-        job.continue_job(parser);
-    }
+    // if !job.is_initially_background() {
+    //     job.continue_job(parser);
+    // }
 
     if job.is_stopped() {
         transfer.save_tty_modes();
